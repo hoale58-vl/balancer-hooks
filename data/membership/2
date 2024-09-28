@@ -1,0 +1,11 @@
+{
+  "description": "Balancer Membership NFT - Gain benefit from Swap Discount on Balancer Pool",
+  "image": "https://raw.githubusercontent.com/hoale58-vl/balancer-hooks/refs/heads/master/data/membership/2.png",
+  "name": "Balancer Membership Level 2",
+  "attributes": [
+    {
+      "trait_type": "Tier",
+      "value": "2"
+    }
+  ]
+}
