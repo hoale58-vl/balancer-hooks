@@ -65,11 +65,7 @@ contract Membership is ERC721, IMembership, AccessControl {
         return super._update(to, tokenId, auth);
     }
 
-    function _burn(uint256 tokenId) internal override(ERC721) {
-        super._burn(tokenId);
-    }
-
-    function getTierLevel(address user) external override returns (uint256) {
+    function getTierLevel(address user) external view override returns (uint256) {
         return _tier[user];
     }
 

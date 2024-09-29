@@ -54,7 +54,7 @@ contract MembershipHook is BaseHooks, IMembershipHook, VaultGuard, Ownable {
 
     /// @inheritdoc BaseHooks
     function onRegister(
-        address factory,
+        address,
         address poolAddress,
         TokenConfig[] memory,
         LiquidityManagement calldata
@@ -66,8 +66,8 @@ contract MembershipHook is BaseHooks, IMembershipHook, VaultGuard, Ownable {
     /// @inheritdoc BaseHooks
     function onComputeDynamicSwapFeePercentage(
         PoolSwapParams calldata params,
-        address pool,
-        uint256 staticSwapFeePercentage
+        address,
+        uint256
     ) public view override onlyVault returns (bool, uint256) {
         address user = IRouterCommon(params.router).getSender();
 
@@ -82,6 +82,6 @@ contract MembershipHook is BaseHooks, IMembershipHook, VaultGuard, Ownable {
     }
 
     function setTierPrice(uint256 tier, uint256 feeBps) external onlyOwner {
-        _tierFee[tier] = feeBps;
+        _tierFeeBps[tier] = feeBps;
     }
 }

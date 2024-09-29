@@ -1,0 +1,672 @@
+[
+    {
+        "inputs": [],
+        "name": "AfterAddLiquidityHookFailed",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "AfterInitializeHookFailed",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "AfterRemoveLiquidityHookFailed",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "AfterSwapHookFailed",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "AmountGivenZero",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC20",
+                "name": "tokenIn",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "maxAmountIn",
+                "type": "uint256"
+            }
+        ],
+        "name": "AmountInAboveMax",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC20",
+                "name": "tokenOut",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amountOut",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+            }
+        ],
+        "name": "AmountOutBelowMin",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "BalanceNotSettled",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "BeforeAddLiquidityHookFailed",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "BeforeInitializeHookFailed",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "BeforeRemoveLiquidityHookFailed",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "BeforeSwapHookFailed",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "maxAmountIn",
+                "type": "uint256"
+            }
+        ],
+        "name": "BptAmountInAboveMax",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "amountOut",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+            }
+        ],
+        "name": "BptAmountOutBelowMin",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            }
+        ],
+        "name": "BufferAlreadyInitialized",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            }
+        ],
+        "name": "BufferNotInitialized",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "BufferSharesInvalidOwner",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "BufferSharesInvalidReceiver",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "totalSupply",
+                "type": "uint256"
+            }
+        ],
+        "name": "BufferTotalSupplyTooLow",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "CannotReceiveEth",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "CannotSwapSameToken",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "DoesNotSupportAddLiquidityCustom",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "DoesNotSupportDonation",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "DoesNotSupportRemoveLiquidityCustom",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "DoesNotSupportUnbalancedLiquidity",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "DynamicSwapFeeHookFailed",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "FeePrecisionTooHigh",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC20",
+                "name": "tokenIn",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "maxAmountIn",
+                "type": "uint256"
+            }
+        ],
+        "name": "HookAdjustedAmountInAboveMax",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC20",
+                "name": "tokenOut",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amountOut",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+            }
+        ],
+        "name": "HookAdjustedAmountOutBelowMin",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "limit",
+                "type": "uint256"
+            }
+        ],
+        "name": "HookAdjustedSwapLimit",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "poolHooksContract",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "poolFactory",
+                "type": "address"
+            }
+        ],
+        "name": "HookRegistrationFailed",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "InvalidAddLiquidityKind",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "InvalidRemoveLiquidityKind",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "InvalidToken",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "InvalidTokenConfiguration",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "InvalidTokenType",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            }
+        ],
+        "name": "InvalidUnderlyingToken",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "MaxTokens",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "MinTokens",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "NotEnoughBufferShares",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "expectedUnderlyingAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "actualUnderlyingAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "NotEnoughUnderlying",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "expectedWrappedAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "actualWrappedAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "NotEnoughWrapped",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "NotVaultDelegateCall",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "PauseBufferPeriodDurationTooLarge",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "PercentageAboveMax",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "PoolAlreadyInitialized",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "PoolAlreadyRegistered",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "PoolInRecoveryMode",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "PoolNotInRecoveryMode",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "PoolNotInitialized",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "PoolNotPaused",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "PoolNotRegistered",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "PoolPauseWindowExpired",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "PoolPaused",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "ProtocolFeesExceedTotalCollected",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "QueriesDisabled",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "QuoteResultSpoofed",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "RouterNotTrusted",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            }
+        ],
+        "name": "SenderIsNotVault",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "SwapFeePercentageTooHigh",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "SwapFeePercentageTooLow",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "limit",
+                "type": "uint256"
+            }
+        ],
+        "name": "SwapLimit",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC20",
+                "name": "token",
+                "type": "address"
+            }
+        ],
+        "name": "TokenAlreadyRegistered",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC20",
+                "name": "token",
+                "type": "address"
+            }
+        ],
+        "name": "TokenNotRegistered",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "expectedToken",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "actualToken",
+                "type": "address"
+            }
+        ],
+        "name": "TokensMismatch",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "TradeAmountTooSmall",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "VaultBuffersArePaused",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "VaultIsNotUnlocked",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "VaultNotPaused",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "VaultPauseWindowDurationTooLarge",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "VaultPauseWindowExpired",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "VaultPaused",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            }
+        ],
+        "name": "WrapAmountTooSmall",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "WrongProtocolFeeControllerDeployment",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "underlyingToken",
+                "type": "address"
+            }
+        ],
+        "name": "WrongUnderlyingToken",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "WrongVaultAdminDeployment",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "WrongVaultExtensionDeployment",
+        "type": "error"
+    }
+]

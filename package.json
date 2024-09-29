@@ -18,7 +18,7 @@
     "@types/mocha": ">=9.1.0",
     "@types/node": ">=18.0.0",
     "chai": "^4.2.0",
-    "ethers": "^6.4.0",
+    "ethers": "^6.13.2",
     "hardhat": "^2.22.12",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-gas-reporter": "^2.2.1",
@@ -30,6 +30,7 @@
   "dependencies": {
     "@balancer-labs/v3-interfaces": "https://gitpkg.vercel.app/balancer/balancer-v3-monorepo/pkg/interfaces?main",
     "@openzeppelin/contracts": "^5.0.2",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "permit2": "https://github.com/Uniswap/permit2.git#cc56ad0f3439c502c246fc5cfcc3db92bb8b7219"
   }
 }

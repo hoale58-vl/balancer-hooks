@@ -1,0 +1,555 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "exactSharesToIssue",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "sharesOwner",
+                "type": "address"
+            }
+        ],
+        "name": "addLiquidityToBuffer",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "amountUnderlyingRaw",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amountWrappedRaw",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "areBuffersPaused",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "collectAggregateFees",
+        "outputs": [
+            {
+                "internalType": "uint256[]",
+                "name": "swapFeeAmounts",
+                "type": "uint256[]"
+            },
+            {
+                "internalType": "uint256[]",
+                "name": "yieldFeeAmounts",
+                "type": "uint256[]"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "disableQuery",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "disableRecoveryMode",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "enableRecoveryMode",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            }
+        ],
+        "name": "getBufferAsset",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "underlyingToken",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            }
+        ],
+        "name": "getBufferBalance",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "underlyingBalanceRaw",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "wrappedBalanceRaw",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getBufferMinimumTotalSupply",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "liquidityOwner",
+                "type": "address"
+            }
+        ],
+        "name": "getBufferOwnerShares",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "ownerShares",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getBufferPeriodDuration",
+        "outputs": [
+            {
+                "internalType": "uint32",
+                "name": "",
+                "type": "uint32"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getBufferPeriodEndTime",
+        "outputs": [
+            {
+                "internalType": "uint32",
+                "name": "",
+                "type": "uint32"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            }
+        ],
+        "name": "getBufferTotalShares",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "bufferShares",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getMaximumPoolTokens",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getMinimumPoolTokens",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getMinimumTradeAmount",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getMinimumWrapAmount",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getPauseWindowEndTime",
+        "outputs": [
+            {
+                "internalType": "uint32",
+                "name": "",
+                "type": "uint32"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getPoolMinimumTotalSupply",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getVaultPausedState",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            },
+            {
+                "internalType": "uint32",
+                "name": "",
+                "type": "uint32"
+            },
+            {
+                "internalType": "uint32",
+                "name": "",
+                "type": "uint32"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amountUnderlyingRaw",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amountWrappedRaw",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "sharesOwner",
+                "type": "address"
+            }
+        ],
+        "name": "initializeBuffer",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "issuedShares",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "isVaultPaused",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "pausePool",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "pauseVault",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "pauseVaultBuffers",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC4626",
+                "name": "wrappedToken",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "sharesToRemove",
+                "type": "uint256"
+            }
+        ],
+        "name": "removeLiquidityFromBuffer",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "removedUnderlyingBalanceRaw",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "removedWrappedBalanceRaw",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IAuthorizer",
+                "name": "newAuthorizer",
+                "type": "address"
+            }
+        ],
+        "name": "setAuthorizer",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IProtocolFeeController",
+                "name": "newProtocolFeeController",
+                "type": "address"
+            }
+        ],
+        "name": "setProtocolFeeController",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "swapFeePercentage",
+                "type": "uint256"
+            }
+        ],
+        "name": "setStaticSwapFeePercentage",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            }
+        ],
+        "name": "unpausePool",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "unpauseVault",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "unpauseVaultBuffers",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "newAggregateSwapFeePercentage",
+                "type": "uint256"
+            }
+        ],
+        "name": "updateAggregateSwapFeePercentage",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "newAggregateYieldFeePercentage",
+                "type": "uint256"
+            }
+        ],
+        "name": "updateAggregateYieldFeePercentage",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "vault",
+        "outputs": [
+            {
+                "internalType": "contract IVault",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]

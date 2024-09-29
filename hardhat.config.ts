@@ -3,7 +3,7 @@ import "@nomicfoundation/hardhat-toolbox";
 import * as dotenv from "dotenv";
 import "hardhat-abi-exporter";
 import "hardhat-gas-reporter";
-import "@nomiclabs/hardhat-ethers";
+import "@nomicfoundation/hardhat-ethers";
 
 dotenv.config();
 
@@ -24,9 +24,9 @@ const config: HardhatUserConfig = {
   },
   networks: {
     sepolia: {
-      url: "https://eth-sepolia.api.onfinality.io/public",
+      url: "https://rpc.sepolia.org",
       chainId: 11155111,
-      gasPrice: 5000000000,
+      gasPrice: 5_000_000_000,
       accounts: [sepoliaTestnetPrivateKey!],
       timeout: 2_147_483_647,
     },
