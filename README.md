@@ -1,6 +1,4 @@
-# TWAMM Balancer Hook
-
-A TWAMM (Time Weighted Average Market Maker) is a type of market maker that uses time-weighted averages to calculate the prices of assets. This can be used to reduce the volatility of the market and to provide more accurate prices for assets.
+# Awesome Balancer v3 Hooks
 
 Try running some of the following tasks:
 
